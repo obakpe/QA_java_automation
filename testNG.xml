@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="myTest">
+ <test name="selenium test">
+     <parameter name="a" value="5"/>
+     <parameter name="b" value="3"/>
+  <classes>
+    <class name="unitTesting.unitTest1"/>
+    <class name="unitTesting.annotationsInTestNG"/>
+      <class name="firstTest.firstSeleniumTest"/>
+      <class name="firstTest.orangeCRMTest"/>
+      <class name="firstTest.seleniumInDepth"/>
+      <class name="firstTest.SeleniumTwo"/>
+ </classes>
+ </test>
+    <listeners>
+   <!--     <listener class-name="Org.testng.reporters.XMLReporter"/>-->
+   <!--     <listener class-name="org.testng.reporters.TestHTMLReporter"/>-->
+        <listener class-name="firstTest.ExtentReportsDemo"/>
+    </listeners>
+
+</suite>
+
+
+
+
+
+
+
+
+
